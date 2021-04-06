@@ -14,3 +14,7 @@ const result = groupBy([1.2, 1.1, 2.3, 0.4], Math.floor)
 //   "2": [2.3],
 // }
 ```
+### Available scripts
+`npm run build`
+`npm tests`
+
