@@ -7,7 +7,7 @@ const groupBy = <T>(
   arr.forEach((el) => {
     const key = cb(el);
 
-    if (key in map) {
+    if (Object.prototype.hasOwnProperty.call(map, key)) {
       map[key].push(el);
     } else {
       map[key] = [el];

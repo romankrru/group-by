@@ -36,5 +36,9 @@ describe("groupBy", () => {
         { g: Gender.Female, n: "C" },
       ],
     });
+
+    expect(groupBy([1, 2, 3], () => "toString")).toEqual({
+      toString: [1, 2, 3],
+    });
   });
 });
